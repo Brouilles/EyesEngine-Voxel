@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\gaeta\Git\EyesEngine (Voxel)\EyesEngine\EyesEngine_Server\main.cpp(52,31): warning C4267: '=': conversion from 'size_t' to 'char', possible loss of data
+C:\Users\gaeta\Git\EyesEngine (Voxel)\EyesEngine\EyesEngine_Server\main.cpp(53,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  EyesEngine_Server.vcxproj -> C:\Users\gaeta\Git\EyesEngine (Voxel)\EyesEngine\Debug\EyesEngine_Server.exe

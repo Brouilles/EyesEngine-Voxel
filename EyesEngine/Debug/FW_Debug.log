@@ -1,0 +1,27 @@
+[SUCCESS]FW_Debug reset logs file
+[SUCCESS]FW_Stream load option.ini
+[SUCCESS]FW_Stream unload option.ini
+[SUCCESS]Game_initialized: Server connexion
+[SUCCESS]Game_initialized: Server Reponse (Player3, 4)
+[SUCCESS]FW_Input: DirectInput8Create
+[SUCCESS]FW_Keyboard: directInputObject->CreateDevice Success
+[SUCCESS]FW_Keyboard: m_keyboardDevice->SetDataFormat Success
+[SUCCESS]FW_Keyboard: m_keyboardDevice->SetCooperativeLevel Success
+[SUCCESS]FW_Input: DirectInput8Create
+[SUCCESS]FW_Mouse: directInputObject->CreateDevice Success
+[SUCCESS]FW_Mouse: m_mouseDevice->SetDataFormat Success
+[SUCCESS]FW_Input: DirectInput8Create
+[WARNING]FW_Gamepad: directInputObject->CreateDevice Failed
+[SUCCESS]///////// COMPUTER HARDWARE /////////
+[SUCCESS]nvd3dum.dll
+[SUCCESS]NVIDIA GeForce GTX 560 Ti  
+[SUCCESS]/////////	END	/////////
+[SUCCESS]Game_initialized: D3DCREATE_HARDWARE_VERTEXPROCESSING
+[SUCCESS]Game_initialized: Direct3DManager_initialized
+[SUCCESS]Game_initialized: GameTime_initialized
+[SUCCESS]Game_initialized: GameTime_initialized
+[SUCCESS]TexturesList_load: Texture Load: Content/blocks/grass/grass_top.png
+[SUCCESS]TexturesList_load: Texture Load: Content/blocks/grass/grass_side.png
+[SUCCESS]TexturesList_load: Texture Load: Content/blocks/grass/grass_bottom.png
+[SUCCESS]TexturesList_load: Texture Load: Content/blocks/plants/grass1.png
+[ERROR]F4 exit

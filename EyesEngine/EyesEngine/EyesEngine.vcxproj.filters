@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="EyesEngine">
+      <UniqueIdentifier>{b0b412f5-1cb2-4770-8cb6-172dbf9f82c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EyesEngine\Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="EyesEngine\Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="EyesEngine\Fichiers sources\Graphics">
+      <UniqueIdentifier>{aeba776b-2ad1-4fd0-b42b-656061a69d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EyesEngine\Fichiers d%27en-tête\Graphics">
+      <UniqueIdentifier>{672e8f1b-6312-472d-a2b5-d26f892dc1dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EyesEngine\Fichiers sources\Core">
+      <UniqueIdentifier>{21c2bfd5-fbc3-493b-a09a-316e1d711e76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EyesEngine\Fichiers sources\Graphics\Tools">
+      <UniqueIdentifier>{29d27ea3-57f2-49a0-9a76-8f9e91a68162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EyesEngine\Fichiers d%27en-tête\Graphics\Tools">
+      <UniqueIdentifier>{923f3f07-ebc6-4722-afe4-c3c356bd9218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EyesEngine\Fichiers d%27en-tête\Graphics\Primitive">
+      <UniqueIdentifier>{0d10ffe9-9385-49c7-9644-bae1a62e20b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EyesEngine\Fichiers sources\Graphics\Primitive">
+      <UniqueIdentifier>{2e490aa0-44d6-43bc-a09f-7a33383c98d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EyesEngine\Fichiers d%27en-tête\Core">
+      <UniqueIdentifier>{19559040-512e-48d5-9032-8664fae8e0db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{8bf54805-d342-4a11-aff4-8ffc1a40f758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Fichiers d%27en-tête">
+      <UniqueIdentifier>{d786e8dc-835d-46a7-878a-ae7de10e3f3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Fichiers d%27en-tête\Gameplay">
+      <UniqueIdentifier>{cb06a0d4-c96c-460c-9277-100e2f50d7b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Fichiers d%27en-tête\Gameplay\Entity">
+      <UniqueIdentifier>{88e2c6d2-2304-43b2-b051-f0ec925db951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Fichiers d%27en-tête\Gameplay\World">
+      <UniqueIdentifier>{d77ac040-cb0d-4a79-9bb7-379584b637cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Fichiers sources">
+      <UniqueIdentifier>{ab578e88-7de1-49ea-803e-24d4e379e315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Fichiers sources\Gameplay">
+      <UniqueIdentifier>{f82263a8-fab2-4e72-974f-793f8252b6f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Fichiers sources\Gameplay\Entity">
+      <UniqueIdentifier>{b0df06fe-9792-4ad7-9627-f1537e4aedab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Fichiers sources\Gameplay\World">
+      <UniqueIdentifier>{a26a92c0-35ae-47b7-a834-691cc9082194}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>EyesEngine\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3DManager.cpp">
+      <Filter>EyesEngine\Fichiers sources\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>EyesEngine\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Game1.cpp">
+      <Filter>Game\Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelLoader_X.cpp">
+      <Filter>EyesEngine\Fichiers sources\Graphics\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityModel.cpp">
+      <Filter>Game\Fichiers sources\Gameplay\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityPlayer.cpp">
+      <Filter>Game\Fichiers sources\Gameplay\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockModel.cpp">
+      <Filter>EyesEngine\Fichiers sources\Graphics\Primitive</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugScreen.cpp">
+      <Filter>EyesEngine\Fichiers sources\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>Game\Fichiers sources\Gameplay\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Chunk.cpp">
+      <Filter>Game\Fichiers sources\Gameplay\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Game\Fichiers sources\Gameplay\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3DFreeFlyCamera.h.cpp">
+      <Filter>EyesEngine\Fichiers sources\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.cpp">
+      <Filter>EyesEngine\Fichiers sources\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="TexturesList.cpp">
+      <Filter>Game\Fichiers sources\Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="CrossModel.cpp">
+      <Filter>EyesEngine\Fichiers sources\Graphics\Primitive</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Direct3DManager.h">
+      <Filter>EyesEngine\Fichiers d%27en-tête\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>EyesEngine\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Game1.h">
+      <Filter>Game\Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelLoader_X.h">
+      <Filter>EyesEngine\Fichiers d%27en-tête\Graphics\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityPlayer.h">
+      <Filter>Game\Fichiers d%27en-tête\Gameplay\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityModel.h">
+      <Filter>Game\Fichiers d%27en-tête\Gameplay\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockModel.h">
+      <Filter>EyesEngine\Fichiers d%27en-tête\Graphics\Primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="Chunk.h">
+      <Filter>Game\Fichiers d%27en-tête\Gameplay\World</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugScreen.h">
+      <Filter>EyesEngine\Fichiers d%27en-tête\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>Game\Fichiers d%27en-tête\Gameplay\World</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>Game\Fichiers d%27en-tête\Gameplay\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3DFreeFlyCamera.h">
+      <Filter>EyesEngine\Fichiers d%27en-tête\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="TexturesList.h">
+      <Filter>Game\Fichiers d%27en-tête\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="CrossModel.h">
+      <Filter>EyesEngine\Fichiers d%27en-tête\Graphics\Primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>EyesEngine\Fichiers d%27en-tête\Graphics\Primitive</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,62 @@
+#ifndef FW_MOUSE_H_INCLUDED
+#define FW_MOUSE_H_INCLUDED
+
+/////////////////////////////INCLUDE/////////////////////////
+#include <iostream>
+#include <string>
+#include <dinput.h>
+#include "../../FW_Debug/FW_Debug/FW_Debug.h"
+
+#include "FW_Input.h"
+/////////////////////////////////////////////////////////////
+
+typedef struct MOUSESTATE {
+	LONG x;		
+	LONG y;			
+	LONG wheel_z;
+	BYTE buttons[4];		
+};
+
+class FW_Mouse
+{
+public:
+	FW_Mouse();
+	~FW_Mouse();
+
+	/////////////////////////////////////////////////////////////
+	/// <summary> 
+	///		Initialize memory. Get mouse input.
+	/// </summary>
+	/////////////////////////////////////////////////////////////
+	void FW_Mouse_initialized(HINSTANCE hInstance, HWND hwnd);
+
+	/////////////////////////////////////////////////////////////
+	/// <summary> 
+	///		Deallocate memory.
+	/// </summary>
+	/////////////////////////////////////////////////////////////
+	void FW_Mouse_deallocated();
+
+	/////////////////////////////////////////////////////////////
+	/// <summary> 
+	///		Acquire input and device state. 
+	/// </summary>
+	/////////////////////////////////////////////////////////////
+	void FW_Mouse_acquire();
+
+	/////////////////////////////////////////////////////////////
+	/// <summary> 
+	///		Return m_mouseBuffer.
+	/// </summary>
+	/////////////////////////////////////////////////////////////
+	MOUSESTATE FW_Mouse_getMouseBuffer();
+
+private:
+	HRESULT m_result;
+	FW_Debug m_debug;
+
+	LPDIRECTINPUTDEVICE8 m_mouseDevice;
+	MOUSESTATE m_mouseBuffer;
+};
+
+#endif

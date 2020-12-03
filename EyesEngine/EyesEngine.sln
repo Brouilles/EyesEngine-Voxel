@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EyesEngine_Client", "EyesEngine\EyesEngine.vcxproj", "{3505AB3C-BC19-4D5D-B32C-127D11C471E8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{27804CD6-33A2-4977-869C-53C1672FA3D9} = {27804CD6-33A2-4977-869C-53C1672FA3D9}
+		{04E58CF1-86F6-4313-851A-ACE435EA3299} = {04E58CF1-86F6-4313-851A-ACE435EA3299}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FW_Debug", "..\FW_Debug\FW_Debug\FW_Debug.vcxproj", "{02F71CEA-0E21-4E2C-B589-08571FFB147E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FW_Input", "..\FW_Input\FW_Input\FW_Input.vcxproj", "{2992955E-AAA9-42F5-A3A9-341225755827}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EyesEngine_Server", "EyesEngine_Server\EyesEngine_Server.vcxproj", "{9BB811A2-DF69-4049-B55F-484B6905A764}"
+	ProjectSection(ProjectDependencies) = postProject
+		{27804CD6-33A2-4977-869C-53C1672FA3D9} = {27804CD6-33A2-4977-869C-53C1672FA3D9}
+		{02F71CEA-0E21-4E2C-B589-08571FFB147E} = {02F71CEA-0E21-4E2C-B589-08571FFB147E}
+		{04E58CF1-86F6-4313-851A-ACE435EA3299} = {04E58CF1-86F6-4313-851A-ACE435EA3299}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EyesEngine_Universal", "EyesEngine_Universal\EyesEngine_Universal.vcxproj", "{04E58CF1-86F6-4313-851A-ACE435EA3299}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FW_Stream", "..\FW_Stream\FW_Stream\FW_Stream.vcxproj", "{27804CD6-33A2-4977-869C-53C1672FA3D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3505AB3C-BC19-4D5D-B32C-127D11C471E8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3505AB3C-BC19-4D5D-B32C-127D11C471E8}.Debug|Win32.Build.0 = Debug|Win32
+		{3505AB3C-BC19-4D5D-B32C-127D11C471E8}.Release|Win32.ActiveCfg = Release|Win32
+		{3505AB3C-BC19-4D5D-B32C-127D11C471E8}.Release|Win32.Build.0 = Release|Win32
+		{02F71CEA-0E21-4E2C-B589-08571FFB147E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{02F71CEA-0E21-4E2C-B589-08571FFB147E}.Debug|Win32.Build.0 = Debug|Win32
+		{02F71CEA-0E21-4E2C-B589-08571FFB147E}.Release|Win32.ActiveCfg = Release|Win32
+		{02F71CEA-0E21-4E2C-B589-08571FFB147E}.Release|Win32.Build.0 = Release|Win32
+		{2992955E-AAA9-42F5-A3A9-341225755827}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2992955E-AAA9-42F5-A3A9-341225755827}.Debug|Win32.Build.0 = Debug|Win32
+		{2992955E-AAA9-42F5-A3A9-341225755827}.Release|Win32.ActiveCfg = Release|Win32
+		{2992955E-AAA9-42F5-A3A9-341225755827}.Release|Win32.Build.0 = Release|Win32
+		{9BB811A2-DF69-4049-B55F-484B6905A764}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9BB811A2-DF69-4049-B55F-484B6905A764}.Debug|Win32.Build.0 = Debug|Win32
+		{9BB811A2-DF69-4049-B55F-484B6905A764}.Release|Win32.ActiveCfg = Release|Win32
+		{9BB811A2-DF69-4049-B55F-484B6905A764}.Release|Win32.Build.0 = Release|Win32
+		{04E58CF1-86F6-4313-851A-ACE435EA3299}.Debug|Win32.ActiveCfg = Debug|Win32
+		{04E58CF1-86F6-4313-851A-ACE435EA3299}.Debug|Win32.Build.0 = Debug|Win32
+		{04E58CF1-86F6-4313-851A-ACE435EA3299}.Release|Win32.ActiveCfg = Release|Win32
+		{04E58CF1-86F6-4313-851A-ACE435EA3299}.Release|Win32.Build.0 = Release|Win32
+		{27804CD6-33A2-4977-869C-53C1672FA3D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{27804CD6-33A2-4977-869C-53C1672FA3D9}.Debug|Win32.Build.0 = Debug|Win32
+		{27804CD6-33A2-4977-869C-53C1672FA3D9}.Release|Win32.ActiveCfg = Release|Win32
+		{27804CD6-33A2-4977-869C-53C1672FA3D9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dezeiraud-gaetan.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = EyesEngine\\EyesEngine.vcxproj
+		SccProjectName1 = EyesEngine
+		SccLocalPath1 = EyesEngine
+		SccProjectUniqueName2 = EyesEngine_Server\\EyesEngine_Server.vcxproj
+		SccProjectName2 = EyesEngine_Server
+		SccLocalPath2 = EyesEngine_Server
+		SccProjectUniqueName3 = EyesEngine_Universal\\EyesEngine_Universal.vcxproj
+		SccProjectName3 = EyesEngine_Universal
+		SccLocalPath3 = EyesEngine_Universal
+		SccProjectUniqueName4 = ..\\FW_Debug\\FW_Debug\\FW_Debug.vcxproj
+		SccProjectName4 = ../FW_Debug/FW_Debug
+		SccLocalPath4 = ..\\FW_Debug\\FW_Debug
+		SccProjectUniqueName5 = ..\\FW_Input\\FW_Input\\FW_Input.vcxproj
+		SccProjectName5 = ../FW_Input/FW_Input
+		SccLocalPath5 = ..\\FW_Input\\FW_Input
+		SccProjectUniqueName6 = ..\\FW_Stream\\FW_Stream\\FW_Stream.vcxproj
+		SccProjectName6 = ../FW_Stream/FW_Stream
+		SccLocalPath6 = ..\\FW_Stream\\FW_Stream
+	EndGlobalSection
+EndGlobal

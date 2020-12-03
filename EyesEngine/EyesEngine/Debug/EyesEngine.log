@@ -1,0 +1,11 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (EyesEngine.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Chunk.cpp
+C:\Users\gaeta\Git\EyesEngine (Voxel)\EyesEngine\EyesEngine\Math.cpp(56,26): warning C4018: '<': signed/unsigned mismatch
+  World.cpp
+  C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\gaeta\Git\EyesEngine (Voxel)\FW_Input\FW_Input\FW_Input.h(16,1): warning C4005: 'DIRECTINPUT_VERSION': macro redefinition
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dinput.h(42): message : see previous definition of 'DIRECTINPUT_VERSION'
+C:\Users\gaeta\Git\EyesEngine (Voxel)\EyesEngine\EyesEngine\Math.cpp(56,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gaeta\Git\EyesEngine (Voxel)\FW_Input\FW_Input\FW_Mouse.h(18,2): warning C4091: 'typedef ': ignored on left of 'MOUSESTATE' when no variable is declared
+  Generating Code...
+  EyesEngine.vcxproj -> C:\Users\gaeta\Git\EyesEngine (Voxel)\EyesEngine\Debug\EyesEngine_Client.exe

@@ -1,0 +1,97 @@
+#ifndef FW_DEBUG_H_INCLUDED
+#define FW_DEBUG_H_INCLUDED
+
+/////////////////////////////INCLUDE/////////////////////////
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <fstream>
+
+#include <Windows.h>
+/////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////
+/// <summary> 
+///		Define DebugType mode. WINDOW popup simple window, then it will need the type of window with FW_windowType. 
+///		Logs write information in logs file.
+/// </summary>
+/////////////////////////////////////////////////////////////
+enum class FW_debugType
+{
+	NOTHING,
+	WINDOW,
+	LOGS
+};
+
+/////////////////////////////////////////////////////////////
+/// <summary> 
+///		Enumeration to define the logo in popup window. 
+/// </summary>
+/////////////////////////////////////////////////////////////
+enum class FW_windowType
+{
+	INFORMATION,
+	WARNING,
+	FATALERROR
+};
+
+class FW_Debug
+{
+public:
+	FW_Debug();
+	~FW_Debug();
+
+	/////////////////////////////////////////////////////////////
+	/// <summary> 
+	///		Function to write success in logs file or popup window.
+	/// </summary>
+	/////////////////////////////////////////////////////////////
+	virtual void FW_success(std::string text, FW_debugType type, FW_debugType type2);
+
+	/////////////////////////////////////////////////////////////
+	/// <summary> 
+	///		Function to write error in logs file or popup window.
+	/// </summary>
+	/////////////////////////////////////////////////////////////
+	virtual void FW_warning(std::string text, FW_debugType type, FW_debugType type2);
+
+	/////////////////////////////////////////////////////////////
+	/// <summary> 
+	///		Function to write error in logs file or popup window.
+	/// </summary>
+	/////////////////////////////////////////////////////////////
+	virtual void FW_error(std::string text, FW_debugType type, FW_debugType type2);
+
+	/////////////////////////////////////////////////////////////
+	/// <summary> 
+	///		Popup Window and define the text and window type. 
+	/// </summary>
+	/////////////////////////////////////////////////////////////
+	virtual void FW_window(std::string text, FW_windowType type_icon);
+
+	/////////////////////////////////////////////////////////////
+	/// <summary> 
+	///		This function reset logs file. 
+	/// </summary>
+	/////////////////////////////////////////////////////////////
+	virtual bool FW_logs_reset();
+
+	/////////////////////////////////////////////////////////////
+	/// <summary> 
+	///		Write text and information in logs file.
+	/// </summary>
+	/////////////////////////////////////////////////////////////
+	virtual bool FW_logs_write(std::string error);
+
+private:
+	/////////////////////////////////////////////////////////////
+	/// <summary> 
+	///		virtual function to write the error depending on the type. 
+	///		The type and type2 defines the write mode: FW_debugType. 
+	/// </summary>
+	/////////////////////////////////////////////////////////////
+	virtual void FW_write(std::string text, FW_debugType type, FW_debugType type2, FW_windowType windowType);
+};
+
+#endif
