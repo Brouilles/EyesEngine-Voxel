@@ -53,7 +53,6 @@ private:
 	LPD3DXEFFECT blockShader, crossShader;
 
 	//Chunk
-	//Block m_blockArray[16][16][16];
 	int realBlock;
 	Block *m_blockArray;
 

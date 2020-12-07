@@ -163,19 +163,6 @@ void Chunk::Chunk_load(LPDIRECT3DDEVICE9 D3DDevice, FW_Debug debug, TexturesList
 				}
 				else
 					blockMapArray[x][y][z] = 254; //Empty
-
-				/*m_blockArray[x][y][z] = Block();
-
-				if (y > 3)
-					m_blockArray[x][y][z].Block_load(D3DDevice, debug, CubeType::air);
-				else {
-					m_blockArray[x][y][z].Block_load(D3DDevice, debug, CubeType::block);
-
-					if (y == 3)
-						m_blockArray[x][y][z].Block_setCubeId(blocksList.grass, texturesList);
-					else
-						m_blockArray[x][y][z].Block_setCubeId(blocksList.dirt, texturesList);
-				}*/
 			}
 		}
 	}
@@ -248,23 +235,8 @@ void Chunk::Chunk_update()
 
 void Chunk::Chunk_draw(LPDIRECT3DDEVICE9 D3DDevice, D3DXMATRIX view, D3DXMATRIX proj)
 {
-
 	for (int i = 0; i < realBlock; i++)
 	{
 		m_blockArray[i].Block_draw(D3DDevice, m_blockVertexBuffer, m_indexBuffer, blockShader, view, proj);
 	}
-
-	/*for (int x = 0; x < 16; x++)
-	{
-		for (int y = 0; y < 16; y++)
-		{
-			for (int z = 0; z < 16; z++)
-			{
-				if (m_blockArray[x][y][z].Block_getCubeType() == CubeType::block)
-					m_blockArray[x][y][z].Block_draw(D3DDevice, m_blockVertexBuffer, m_indexBuffer, blockShader, view, proj, (m_chunkPos.x * 16.0f) + x, y, (m_chunkPos.y * 16.0f) + z);
-				else if (m_blockArray[x][y][z].Block_getCubeType() == CubeType::cross)
-					m_blockArray[x][y][z].Block_draw(D3DDevice, m_crossVertexBuffer, m_indexBuffer, crossShader, view, proj, (m_chunkPos.x * 16.0f) + x, y, (m_chunkPos.y * 16.0f) + z);
-			}
-		}
-	}*/
 }
