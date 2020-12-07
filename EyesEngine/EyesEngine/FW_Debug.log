@@ -1,8 +1,6 @@
 [SUCCESS]FW_Debug reset logs file
 [SUCCESS]FW_Stream load option.ini
 [SUCCESS]FW_Stream unload option.ini
-[SUCCESS]Game_initialized: Server connexion
-[SUCCESS]Game_initialized: Server Reponse (Player23, 24)
 [SUCCESS]FW_Input: DirectInput8Create
 [SUCCESS]FW_Keyboard: directInputObject->CreateDevice Success
 [SUCCESS]FW_Keyboard: m_keyboardDevice->SetDataFormat Success

@@ -53,13 +53,6 @@ public:
 protected:
 	virtual void Game_update();
 
-	//WinSock
-	WSADATA m_WSAData;
-	SOCKADDR_IN m_sin;
-
-	std::string m_playerPseudo;
-	int m_playerId;
-
 	//FW_Technology
 	FW_Debug m_debug;
 	FW_Keyboard m_keyboard;

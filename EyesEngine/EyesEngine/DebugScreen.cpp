@@ -11,18 +11,13 @@ using namespace std;
 ///		PUBLIC
 /////////////////////////////////////////////////////////////
 DebugScreen::DebugScreen()
-{}
+{	}
 
 DebugScreen::~DebugScreen()
-{
-	
-}
+{	}
 
-bool DebugScreen::DebugScreen_initialized(LPDIRECT3DDEVICE9 D3DDevice, FW_Debug debug, int playerId, string playerPseudo)
+bool DebugScreen::DebugScreen_initialized(LPDIRECT3DDEVICE9 D3DDevice, FW_Debug debug)
 {
-	m_playerId = playerId;
-	m_playerPseudo = playerPseudo;
-
 	m_fontSize = 21;
 
 	//Create Font
@@ -80,5 +75,4 @@ void DebugScreen::DebugScreen_draw()
 
 	//Entity
 	m_font->DrawText(NULL, ("x: " + to_string(m_entityPos.x) + " y: " + to_string(m_entityPos.y) + " z: " + to_string(m_entityPos.z)).c_str(), -1, &m_rectanglePosition[2], DT_NOCLIP, D3DXCOLOR(255.0f, 255.0f, 255.0f, 255.0f));
-	m_font->DrawText(NULL, ("Pseudo: " + m_playerPseudo + " ID: " + to_string(m_playerId)).c_str(), -1, &m_rectanglePosition[3], DT_NOCLIP, D3DXCOLOR(255.0f, 255.0f, 255.0f, 255.0f));
 }

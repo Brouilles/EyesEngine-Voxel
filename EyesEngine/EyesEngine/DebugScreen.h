@@ -25,7 +25,7 @@ public:
 	///		Initiazed GameTime
 	/// </summary>
 	/////////////////////////////////////////////////////////////
-	bool DebugScreen_initialized(LPDIRECT3DDEVICE9 D3DDevice, FW_Debug debug, int playerId, std::string playerPseudo);
+	bool DebugScreen_initialized(LPDIRECT3DDEVICE9 D3DDevice, FW_Debug debug);
 
 	/////////////////////////////////////////////////////////////
 	/// <summary> 
@@ -43,10 +43,6 @@ public:
 	void DebugScreen_draw();
 
 private:
-	//Player Information
-	std::string m_playerPseudo;
-	int m_playerId;
-
 	//Frames per second (GPU)
 	int m_lastFrameRate, m_frameRate;
 	CoolDown m_coolDown;

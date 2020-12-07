@@ -19,7 +19,7 @@ void threadRender(Game &GameInstance)
 }
 
 /*
-**Class Game
+** Class Game
 */
 /////////////////////////////////////////////////////////////
 ///		PUBLIC
@@ -32,13 +32,13 @@ Game1::~Game1()
 
 void Game1::Game_loadContent()
 {
-	//Game World
+	// Game World
 	m_world.World_load(m_direct3DManager.Direct3DManager_getD3Ddevice(), m_debug);
 
-	//Debug Screen
-	m_debugScreen.DebugScreen_initialized(m_direct3DManager.Direct3DManager_getD3Ddevice(), m_debug, m_playerId, m_playerPseudo);
+	// Debug Screen
+	m_debugScreen.DebugScreen_initialized(m_direct3DManager.Direct3DManager_getD3Ddevice(), m_debug);
 
-	//Thread
+	// Thread
 	thread m_renderThread(threadRender, ref(*this));
 	m_renderThread.detach();
 }

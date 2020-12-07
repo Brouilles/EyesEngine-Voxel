@@ -1,2 +1,4 @@
 C:\Users\gaeta\Git\EyesEngine (Voxel)\EyesEngine\Debug\FW_Stream.pdb
 C:\Users\gaeta\Git\EyesEngine (Voxel)\FW_Stream\FW_Stream\Debug\FW_Stream.pdb
+C:\Users\gaeta\Git\EyesEngine-Voxel\EyesEngine\Debug\FW_Stream.pdb
+C:\Users\gaeta\Git\EyesEngine-Voxel\FW_Stream\FW_Stream\Debug\FW_Stream.pdb

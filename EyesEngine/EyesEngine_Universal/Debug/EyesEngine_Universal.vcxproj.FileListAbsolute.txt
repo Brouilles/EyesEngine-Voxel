@@ -1,2 +1,4 @@
 C:\Users\gaeta\Git\EyesEngine (Voxel)\EyesEngine\Debug\EyesEngine_Universal.pdb
 C:\Users\gaeta\Git\EyesEngine (Voxel)\EyesEngine\EyesEngine_Universal\Debug\EyesEngine_Universal.pdb
+C:\Users\gaeta\Git\EyesEngine-Voxel\EyesEngine\Debug\EyesEngine_Universal.pdb
+C:\Users\gaeta\Git\EyesEngine-Voxel\EyesEngine\EyesEngine_Universal\Debug\EyesEngine_Universal.pdb
